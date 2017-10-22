@@ -1,0 +1,20 @@
+{
+  "name": "smart-contracts-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "initBlockchain": "chmod a+x ./scripts/initBlockchain.sh && bash ./scripts/initBlockchain.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniogiordano/smart-contracts-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniogiordano/smart-contracts-dev/issues"
+  },
+  "homepage": "https://github.com/antoniogiordano/smart-contracts-dev#readme"
+}
