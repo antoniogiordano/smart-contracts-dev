@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "initBlockchain": "chmod a+x ./scripts/initBlockchain.sh && bash ./scripts/initBlockchain.sh",
+    "rpc": "geth --datadir ~/.ethereum/net19 --networkid 19 --rpc --rpcport 8545 --rpcaddr 0.0.0.0 --rpccorsdomain \"*\" --rpcapi \"eth,net,web3\" console",
+    "miner": "geth --datadir ~/.ethereum/net19 --networkid 19 --mine",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/antoniogiordano/smart-contracts-dev/issues"
   },
-  "homepage": "https://github.com/antoniogiordano/smart-contracts-dev#readme"
+  "homepage": "https://github.com/antoniogiordano/smart-contracts-dev#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "web3": "^1.0.0-beta.24"
+  }
 }
