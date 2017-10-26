@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "initBlockchain": "chmod a+x ./scripts/initBlockchain.sh && bash ./scripts/initBlockchain.sh",
-    "rpc": "geth --datadir ~/.ethereum/net19 --networkid 19 --rpc --rpcport 8545 --rpcaddr 0.0.0.0 --rpccorsdomain \"*\" --rpcapi \"eth,net,web3\" console",
-    "miner": "geth --datadir ~/.ethereum/net19 --networkid 19 --mine",
+    "rpc": "geth --datadir ~/.ethereum/net19 --networkid 19 --rpc --rpcport 8545 --rpcaddr 0.0.0.0 --rpccorsdomain \"*\" --rpcapi=\"db,eth,net,web3,personal\" --mine",
+    "miner": "geth attach http://127.0.0.1:8545 --mine",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
+    "truffle": "^3.4.11",
     "web3": "^1.0.0-beta.24"
   }
 }
